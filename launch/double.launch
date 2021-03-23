@@ -1,0 +1,32 @@
+<launch>
+    <node 
+        pkg = "turtlesim"
+        type = "turtlesim_node"
+        name = "turtlesim"
+        respawn = "false"
+        ns="sim1"
+    />
+    <node 
+        pkg = "turtlesim"
+        type = "turtle_teleop_key"
+        name = "teleop_key"
+        respawn = "false"
+        launch-prefix= "gnome-terminal --command"
+        ns="sim1"
+    />
+    <node 
+        pkg = "turtlesim"
+        type = "turtlesim_node"
+        name = "turtlesim"
+        respawn = "false"
+        ns="sim2"
+    />
+    <node 
+        pkg = "turtlesim"
+        type = "turtle_teleop_key"
+        name = "teleop_key"
+        respawn = "false"
+        launch-prefix= "gnome-terminal --command"
+        ns="sim2"
+    />
+</launch>

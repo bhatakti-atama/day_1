@@ -1,0 +1,7 @@
+roscore 
+rosrun turtlesim turtlesim_node 
+rosrun turtlesim turtle_teleop_key
+catkin_create_pkg
+catkin_make_isolated
+chmod u+x
+
